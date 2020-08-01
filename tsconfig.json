@@ -12,7 +12,8 @@
         "lib": [
             "ES2019"
         ],
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "esModuleInterop": true
     },
     "include": [ "src/**/*" ]
 }
