@@ -1,15 +1,13 @@
 import { Document } from 'document'
 import { Locale } from 'locale'
-import { Getters, Promisify } from 'types'
+import { QueryObject } from 'query_object'
 import { URL } from 'url'
-import { Nativity } from 'nativity'
 
-export type User = Nativity & Readonly<{
-    locale: Locale | null
+export type User = QueryObject<{
+    locale?: Locale
     isBot: boolean
-} & Getters<Promisify<{
     shortName: string
     fullName: string
-    avatar: Document | null
-    profile: URL | null
-}>>>
+    avatar?: Document
+    profile?: URL
+}>

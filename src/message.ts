@@ -2,9 +2,9 @@ import { Attachment } from 'attachment'
 import { Chat } from 'chat'
 import { Event } from 'event'
 import { User } from 'user'
-import { Nativity } from 'nativity'
+import { QueryObject } from 'query_object'
 
-export type Message = Nativity & Readonly<{
+export type Message = QueryObject<{
     sender?: User
     when: Date
     lastEdit?: Date

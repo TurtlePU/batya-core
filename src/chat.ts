@@ -1,5 +1,5 @@
-import { Nativity } from 'nativity'
+import { QueryObject } from 'query_object'
 
-export abstract class Chat implements Nativity {
-    abstract native(): unknown
-}
+export type Chat = QueryObject<{
+    // TODO
+}>

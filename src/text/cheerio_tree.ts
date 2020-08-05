@@ -5,11 +5,7 @@ export class CheerioTree implements ToHtml {
     constructor(readonly $: CheerioStatic) { }
 
     toHtml(): string {
-        const result = this.$('body').html()
-        if (result === null) {
-            throw 'Failed to render'
-        }
-        return result
+        return <string> this.$('body').html()
     }
 }
 
