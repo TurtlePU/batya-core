@@ -1,5 +1,5 @@
-import { QueryObject } from 'query_object'
+import { FetchObject } from 'fetch_object'
 
-export type Chat = QueryObject<{
+export type Chat = FetchObject<{
     // TODO
 }>

@@ -2,9 +2,9 @@ import { Attachment } from 'attachment'
 import { Chat } from 'chat'
 import { Event } from 'event'
 import { User } from 'user'
-import { QueryObject } from 'query_object'
+import { FetchObject } from 'fetch_object'
 
-export type Message = QueryObject<{
+export type Message = FetchObject<{
     sender?: User
     when: Date
     lastEdit?: Date

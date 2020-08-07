@@ -1,9 +1,9 @@
 import { Document } from 'document'
 import { Locale } from 'locale'
-import { QueryObject } from 'query_object'
+import { FetchObject } from 'fetch_object'
 import { URL } from 'url'
 
-export type User = QueryObject<{
+export type User = FetchObject<{
     locale?: Locale
     isBot: boolean
     shortName: string

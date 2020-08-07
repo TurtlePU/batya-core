@@ -1,4 +1,4 @@
-import { Nativity } from 'query_object'
+import { Nativity } from 'nativity'
 import { Origin } from 'origin'
 
 export abstract class Attachment implements Nativity {
